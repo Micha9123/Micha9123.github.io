@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+   <nav id="desktop-nav">
+        <div class="logo">Michael Avalos</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+   </nav>
+   <nav id="hamburger-nav">
+        <div class="logo">Michael Avalos</div>
+        <div class="hamburger-menu">
+           <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+           <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+           </div>
+        </div>
+   </nav>
+   <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/Picc.png" alt="Michael Avalos profile picture"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">"Si puedes imaginarlo, ¡Puedes programarlo!"</p>
+            <h1 class="title">Michael Avalos</h1>
+            <p class="section_text_p2">Ing.Sistemas Computacionales</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Michael_Avalos.pdf')
+                ">Descargar CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contacto</button>
+            </div>
+            <div id="socials-container">
+              <img 
+              src="./assets/linkedin.png" 
+              alt="My Linkedin profile"
+              class="icon" 
+              onclick="location.href='https://www.linkedin.com/in/michael-andres-avalos-mendoza-750904296'"/>
+              <img 
+              src="./assets/github.png" 
+              alt="My Github profile"
+              class="icon" 
+              onclick="location.href='https://github.com/Micha9123'"/>
+            </div>
+        </div>
+   </section>
+   <section id="about">
+    <p class="section_text_p1">Explora más</p>
+    <h1 class="title">Sobre mí</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img 
+        src="./assets/programadores.jpg" 
+        alt="Profile picture"
+        class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img 
+            src="./assets/experience.png" 
+            alt="Experience icon"
+            class="icon"
+            />
+            <h3>Experiencia</h3>
+            <p>+3 meses<br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img 
+            src="./assets/graduate.png" 
+            alt="Education icon"
+            class="icon"
+            />
+            <h3>Educación</h3>
+            <p>Universidad Privada del Norte<br />2020-2025</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Estudiante de la carrera de
+            Ingeniería de Sistemas
+            Computacionales cursando el
+            séptimo ciclo, con experiencia en
+            desarrollo de programas y un
+            fuerte interés en la tecnología. Mi
+            enfoque se centra en la
+            resolución de problemas y la
+            programación. Soy proactivo, comprometido y orientado a
+            resultados, buscando
+            constantemente crecer en el
+            campo de la ingeniería.
+            </p>
+        </div>
+      </div>
+    </div>
+    <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" 
+    onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section_text_p1">Sobre mí</p>
+    <h1 class="title">Experiencia-Conocimientos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/html (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/css-3 (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/java-script (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JS</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/science.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>ReactJS</h3>
+                <p>Nivel:Basico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/figma (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Figma</h3>
+                <p>Nivel:Basico</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/c-sharp (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>C#</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/sql.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>SQL-Server</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/mysql (1).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>MySQL</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/nodejs.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>NodeJs</h3>
+                <p>Nivel:Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/leaf.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Nivel:Basico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Herramientas</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/a.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>GitHub</h3>
+                <p>Nivel:Basico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Mira mis recientes</p>
+    <h1 class="title">Proyectos</h1>
+    <div class="experience-details-container">
+     <div class="about-containers">
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img 
+          src="./assets/Listado (1).png" 
+          alt="project 1" 
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Web Api con Postman</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+           onclick="location.href='https://github.com/Micha9123/Michael'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://github.com/Micha9123/Michael/blob/master/Imagenes%20de%20Prueba/Busqueda.PNG'">
+            Live Demo
+         </button>
+        </div>
+       </div>
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img 
+          src="./assets/TOBI (1).png" 
+          alt="project 2" 
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">App para Chicharroneria</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+           onclick="location.href='https://www.figma.com/file/vDulxl2D9BZPEabPUnwGB9/Untitled?type=design&node-id=0%3A1&mode=design&t=W2j5IXHZBJxWD9Qn-1'">
+            Figma
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://www.figma.com/proto/vDulxl2D9BZPEabPUnwGB9/Untitled?type=design&t=JOMNlZkUEyrbwFIp-1&scaling=scale-down&page-id=0%3A1&node-id=5-66&mode=design'">
+            Live Demo
+         </button>
+        </div>
+       </div>
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img 
+          src="./assets/Pear (1).png" 
+          alt="project 3" 
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Web para venta de frutas</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" 
+           onclick="location.href='https://www.figma.com/file/CVg1rffafLz98J64LAa0pB/Untitled?type=design&mode=design&t=W2j5IXHZBJxWD9Qn-1'">
+            Figma
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='https://www.figma.com/proto/CVg1rffafLz98J64LAa0pB/Untitled?type=design&t=68O4nigL9cfzIW35-1&scaling=min-zoom&page-id=0%3A1&node-id=7-95&mode=design'">
+            Live Demo
+         </button>
+        </div>
+       </div>
+     </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+      <p class="section_text_p1">Ponte en contacto</p>
+      <h1 class="title">Contactame</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+            src="./assets/email.png" 
+            alt="Email icon" 
+            class="icon contact-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">michaelavalos349@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+            src="./assets/linkedin.png" 
+            alt="Linkedin icon" 
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/michael-andres-avalos-mendoza-750904296">LinkedIn</a></p>
+        </div>
+      </div>
+  </section>
+  <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Michael Avalos.</p>
+  </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
